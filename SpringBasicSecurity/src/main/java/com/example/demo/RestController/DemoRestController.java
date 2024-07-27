@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/demo")
 public class DemoRestController {
 	
 	//http://localhost:8080/showMsg/chote
@@ -27,6 +28,10 @@ public class DemoRestController {
 	//return new ResponseEntity<>(HttpStatus.OK);
 	}
 	
+	@GetMapping("/test")
+	public String getMessage() {
+		return "testing git";
+	}
 	
 	
 	//http://localhost:8080/searchDAta?searchText=vikash
