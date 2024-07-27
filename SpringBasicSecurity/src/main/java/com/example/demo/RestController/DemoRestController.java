@@ -33,6 +33,10 @@ public class DemoRestController {
 		return "testing git";
 	}
 	
+	@GetMapping("/success")
+	public String showText() {
+		return "testing second changes";
+	}
 	
 	//http://localhost:8080/searchDAta?searchText=vikash
 	//http://localhost:8080/searchDAta?searchText=vikash&searchId=1
